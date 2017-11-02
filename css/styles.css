@@ -7,6 +7,7 @@
 	margin:auto;
 	position:relative;
 
+
 }
 
 body{
@@ -23,13 +24,13 @@ header{
 	border-bottom-left-radius:10px;
 	margin-bottom:10px;
 	margin-top:10px;
-	
+	background-color:#F0B429;
 }
 
 h1{
 	color:#FFF;
 	text-align:center;
-	font-size:24px;
+	font-size:36px;
 }
 
 h2{
@@ -42,7 +43,7 @@ nav{
 	width:1200px;
 	height:140px;
 	background-color:#FFF;
-	border-color:#FC0;
+	border-color:#F0B429;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
 	margin-top:10px;
@@ -51,35 +52,81 @@ nav{
 }
 
 ul{
-
-	padding-top:5 px;
-	text-align:center;
-	margin-left:230px;
-
-
+	text-align:left;
 }
 
 li{
-
 	float:left;
 	list-style-type:none;
 	margin:8px;
 }
 
 a{
-	text-decoration:none;
 	font-size:30px;
+
 }
 
 
-.menu:link{color:#039; text-decoration:none}
-.menu:visited{color:#039; text-decoration:none; background:#FFF}
-.menu:hover{color:#039; text-decoration:none; background:#FC0}
-.menu:active{color:#FFF; text-decoration:none; background:#039}
+.menu:link{color:#FFF; text-decoration:none}
+.menu:visited{color:#005883; text-decoration:none; background:#FFF}
+.menu:hover{color:#FFF; text-decoration:none; background:#F0B429}
+.menu:active{color:#FFF; text-decoration:none; background:#005883}
+
+
+
+#menu{
+	position: absolute;
+	display: block;
+	visibility: visible;
+}
+
+#menu ul{
+	position: absolute;
+	display: block;
+	visibility: visible;
+}
+
+#menu li{
+display:block;
+}
+#menu li a{
+
+display:block;
+}
+#menu li ul{
+
+border:1px #ccc solid;
+display:none;
+position:fixed;
+background-color:#039;
+
+
+}
+#menu li ul li{
+
+width:80%;
+height:100%
+display:block;
+}
+#menu li ul li a{
+
+font-size:20px;
+display:block;
+}
+#menu li ul li a:hover{
+
+text-decoration:underline;
+}
+
+#menu li:hover ul{
+	background-color:#005883;
+display:block;
+}
 
 section{
 	width:600px;
 	font-weight:780px;
+	height:auto;
 	float:left;
 	border-style:solid;
 	border-top-right-radius:10px;
@@ -87,9 +134,11 @@ section{
 	margin-left:20px;
 	margin-right:10px;
 	margin-bottom:10px;
-	margin-top:80px;
+	margin-top:20px;
 
 }
+
+
 
 aside{
 	font-weight:450px;
@@ -107,16 +156,21 @@ aside{
 footer{
 	font-weight:1000px;
 	height:100px;
+	font-size:15px;
 	float:none;
 	border-style:solid;
 	border-color:#FFF;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
 	margin-bottom:20px;
-	color:#FFF
+	color:#FFF;
 }
 .autor{
 	float:inherit;
 	width:900px;
 	height:auto;
 	color:#FFF;
+}
+.contador{
+	background-color:#F0B429;
+}
